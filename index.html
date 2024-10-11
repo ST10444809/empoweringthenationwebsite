@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation - Courses</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #558D57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border: none;
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px; 
+        }
+
+        #logo img {
+            max-width: 150px;
+        }
+
+        .business-name {
+            margin-left: 10px; 
+            font-size: 1.5em; 
+            font-weight: bold;
+            color: white; 
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #558D57;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2, h3, h4 {
+            color: #558D57;
+        }
+
+        section {
+            border: 2px solid #558D57;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .courses-section {
+            padding: 50px 20px;
+            background-color: #f8f6f5;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .course-item {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+        }
+
+        .course-item img {
+            max-width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            filter: grayscale(100%);
+            opacity: 0.8;
+            transition: filter 0.3s ease, opacity 0.3s ease;
+        }
+
+        .course-item h3 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+
+        .course-item p {
+            color: #666;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .course-item:hover img {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .course-item:hover {
+            transform: scale(1.05);
+        }
+
+        .navigation-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #558D57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-info {
+            background-color: #e6f2e6;
+            padding: 10px;
+            margin-top: 20px;
+            border-left: 5px solid #558D57;
+        }
+
+        .slogan {
+            font-style: italic;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .navigation-buttons a {
+            background-color: #558D57;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .navigation-buttons a:hover {
+            background-color: #3d6d44;
+        }      
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #558D57;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div id="logo">
+            <img src="Image-removebg-preview.png" alt="Empowering the Nation Logo">
+            <span class="business-name">Empowering the Nation</span>
+        </div>
+        <div class="slogan">
+            <h2>Established in 2018</h2>
+        </div>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="6-month course.html">6-month Course</a></li>
+                <li><a href="6-week course.html">6-week Courses</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="About" class="section-title">
+            <h2>About</h2>
+            <h3>Mission and Inspiration</h3>
+            <p>
+                Empowering the Nation is a local South African business founded by Precious Radebe in 2018. The initiative
+                stems from her personal experiences growing up, where she saw firsthand how her parents and elderly relatives
+                were not given the opportunity to upskill themselves or follow formal educational qualifications. This
+                inspired her to create a platform to help those from her community who face similar challenges. The training
+                school provides skills development opportunities for domestic workers and gardeners, helping them secure better
+                job prospects and a brighter future.
+            </p>
+
+            <h3>Services and Benefits</h3>
+            <p>
+                The primary aim of Empowering the Nation is to upskill domestic workers and gardeners, making them more 
+                competitive in the job market. By acquiring new skills, they can offer more specialized services to potential
+                employers, allowing them to command higher wages and take greater pride in their work. Moreover, graduates
+                of the programs are equipped with the tools and knowledge to start their own businesses, transforming them 
+                into entrepreneurs and leaders within their communities.
+            </p>
+            <p>
+                Employers also benefit by having their household employees undergo formal skills training. This enables 
+                domestic workers and gardeners to offer a wider range of services, providing households with more skilled
+                labor and improving overall service quality. By investing in the education of their employees, employers 
+                contribute to their personal growth and help create a more empowered workforce.
+            </p>
+
+            <h3>Overview</h3>
+            <p>
+                The training upskills domestic workers and gardeners, making them more marketable when seeking employment,
+                enabling them to earn higher wages due to these additional skills. Beyond seeking better employment,
+                graduates are also equipped with the skills to start their own small businesses and become entrepreneurs.
+                Employers increasingly see the value in having their employees upskilled to offer more advanced services,
+                leading to an overall improvement in household management.
+            </p>
+            <p>
+                Customers, whether employers or employees, can select from a variety of courses offered. They can choose
+                more than one course, and discounts are provided based on the number of courses selected:
+                <ul>
+                    <li>One course – no discount</li>
+                    <li>Two courses – 5% discount</li>
+                    <li>Three courses – 10% discount</li>
+                    <li>More than three courses – 15% discount</li>
+                </ul>
+            </p>
+
+            <h3>Company Background</h3>
+            <p>
+                Since its inception, Empowering the Nation has successfully trained hundreds of domestic workers and
+                gardeners through both the six-month Learnership Programs and six-week Short Skills Training Programs. These
+                courses empower them to acquire marketable skills, making them more competitive in the job market or giving
+                them the ability to run their own businesses. The six-month programs are spread across 12 weeks, while the
+                short courses last six weeks.
+            </p>
+            <p>
+                The company is now expanding its reach by developing a web page and mobile app to promote its services. The
+                platform will allow potential customers to request information, receive quotes for selected services, and
+                sign up for various training programs directly online. The platform will serve both employees looking to
+                upskill and employers interested in improving the qualifications of their household staff.
+            </p>
+
+            <h3>Branding</h3>
+            <p>
+                Precious understands the importance of a professional and polished look for her business. While she does not
+                currently have a logo, she emphasizes that the images, fonts, and colors used on the website should reflect
+                the professional image and purpose of Empowering the Nation. The branding will communicate trust,
+                empowerment, and the skill-building potential the company offers to its clients.
+            </p>
+        </section>
+        <section class="courses-section">
+            <h2>6-Weeks Courses</h2>
+            <div class="course-grid">
+                <a href="child-minding.html" class="course-item">
+                    <img src="images/image1.jpg" alt="Child Minding Course">
+                    <h3>CHILD MINDING</h3>
+                    <p>6 MONTHS</p>
+                </a>
+
+                <a href="cooking.html" class="course-item">
+                    <img src="images/image2.jpg" alt="Cooking Course">
+                    <h3>COOKING</h3>
+                    <p>6 MONTHS</p>
+                </a>
+
+                <a href="garden-maintenance.html" class="course-item">
+                    <img src="images/image3.jpg" alt="Garden Maintenance Course">
+                    <h3>GARDEN MAINTENANCE</h3>
+                    <p>6 MONTHS</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <h2>6-Months Courses</h2>
+            <div class="course-grid">
+                <a href="first-aid.html" class="course-item">
+                    <img src="images/image4.jpg" alt="First Aid Course">
+                    <h3>First Aid</h3>
+                    <p>6 WEEKS</p>
+                </a>
+                
+                <a href="sewing.html" class="course-item">
+
+                    <img src="images/image5.jpg" alt="Sewing Course">
+                    <h3>Sewing</h3>  
+                    <p>6 WEEKS</p>>
+                </a>
+        
+                <a href="landscaping.html" class="course-item">
+                    <img src="images/image6.jpg" alt="Landscaping Course">
+                    <h3>Landscaping</h3>
+                    <p>6 WEEKS</p>
+                </a>
+        
+                <a href="life-skills.html" class="course-item">
+                    
+                    <img src="images/image7.jpg" alt="Life Skills Course">
+                    <h3>Life Skills</h3>
+                    <p>6 WEEKS</p>
+                </a>
+        
+        </section>
+    </main>
+        <div class="navigation-buttons">
+            <a href="about.html">Next Page</a>
+        </div>
+
+    <section id="contact-info" class="contact-info">
+        <footer>
+            <p><i class="fas fa-envelope icon"></i>Email: <a href="mailto:empoweringthenation@change.za">empoweringthenation@change.za</a></p>
+            <p><i class="fas fa-phone icon"></i>Phone: 011 432 7590</p>
+            <p><i class="fas fa-map-marker-alt icon"></i>Location 1: 52 Lily Avenue, Florida, Johannesburg, 1709</p>
+            <p><i class="fas fa-map-marker-alt icon"></i>Location 2: 102 Elm Road, Kensington, Johannesburg, 2094</p> 
+            <p><i class="fas fa-map-marker-alt icon"></i>Location 3: 56 Birch Street, Ferndale, Johannesburg, 2194</p>
+            <p>&copy; 2024 Empowering the Nation</p>
+        </footer>
+    </section>
+</body>
+</html>

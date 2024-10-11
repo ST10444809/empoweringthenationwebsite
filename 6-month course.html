@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation - CoursePage</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #558D57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border: none;
+        }
+        #logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px; 
+        }
+
+        #logo img {
+            max-width: 150px;
+        }
+        .business-name {
+            margin-left: 10px; 
+            font-size: 1.5em; 
+            font-weight: bold;
+            color: white; 
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #558D57;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #558D57;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2, h3, h4 {
+            color: #558D57;
+        }
+        main {
+            padding: 20px;
+        }
+
+        h2, h3, h4, h5 {
+            color: #558D57;
+        }
+
+        section {
+            border: 2px solid #558D57;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .section-title {
+            margin-top: 40px;
+        }
+
+        ol {
+            margin-left: 20px;
+        }
+
+        .courses-list ol {
+            list-style-type: decimal;
+            margin-bottom: 20px;
+        }
+
+        .courses-list h4 {
+            margin-top: 10px;
+        }
+
+        ol li {
+            font-weight: bold;
+        }        footer {
+            background-color: #558D57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-info {
+            background-color: #e6f2e6;
+            padding: 10px;
+            margin-top: 20px;
+            border-left: 5px solid #558D57;
+        }
+
+        .slogan {
+            font-style: italic;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .navigation-buttons a {
+            background-color: #558D57;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .navigation-buttons a:hover {
+            background-color: #3d6d44;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="Image-removebg-preview.png" alt="Empowering the Nation Logo">
+            <span class="business-name">Empowering the Nation</span>
+        </div>
+        <nav>
+            <ul>
+   
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="6-month course.html">6-Months course</a>
+                    <div class="dropdown-content">
+                        <a href="first-aid.html">First-aid</a>
+                        <a href="sewing.html">Sewing</a>
+                        <a href="landscaping.html">Landscaping</a>
+                        <a href="life-skills.html">life-skills</a>
+                    </div>
+                </li>
+                <li><a href="6-week course.html">6-week Courses</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section id="courses" class="section-title courses-list">
+            <h2>Courses</h2>
+            <h3>6-month Courses</h3>
+            <ul>
+                <h3><li>First Aid</li></h3>
+                <p>A first aid course teaches participants how to respond effectively to various medical emergencies.</p>
+                <h5>Training Program Includes:</h5>
+                <ol type="i">
+                    <li>Basic Life Support</li>
+                    <li>Wound Care</li>
+                    <li>Fractures and Sprains</li>
+                    <li>Emergency Response</li>
+                    <li>Shock and Fainting</li>
+                    <li>Allergies and Asthma</li>
+                </ol>
+
+                <h3><li>Sewing</li></h3>
+                <p>This course introduces the basics of sewing, fabric handling, and garment making for beginners.</p>
+                <h5>Training Program Includes:</h5>
+                <ol>
+                    <li>Sewing Machine Basics</li>
+                    <li>Stitching Techniques</li>
+                    <li>Fabric Types</li>
+                    <li>Pattern Reading and Cutting</li>
+                    <li>Hems and Seams</li>
+                    <li>Garment Construction</li>
+                    <li>Alterations</li>
+                </ol>
+
+                <h3><li>Landscaping</li></h3>
+                <p>This course covers the principles of garden design, plant care, and outdoor space management.</p>
+                <h5>Training Program Includes:</h5>
+                <ol>
+                    <li>Landscape Design</li>
+                    <li>Plant Selection</li>
+                    <li>Hardscaping</li>
+                    <li>Soil and Fertilizer</li>
+                    <li>Lawn Care</li>
+                    <li>Irrigation</li>
+                    <li>Seasonal Maintenance</li>
+                </ol>
+
+                <h3><li>Life Skills</li></h3>
+                <p>This course focuses on essential skills for managing personal and professional challenges.</p>
+                <h5>Training Program Includes:</h5>
+                <ol>
+                    <li>Communication Skills</li>
+                    <li>Time Management</li>
+                    <li>Financial Literacy</li>
+                    <li>Problem Solving</li>
+                    <li>Interpersonal Skills</li>
+                    <li>Emotional Intelligence</li>
+                    <li>Health and Wellbeing</li>
+                </ol>
+            </ul>
+
+        </section>
+        </main>
+
+                <!-- Navigation Buttons -->
+                <div class="navigation-buttons">
+                    <a href="about.html">Back</a>
+                    <a href="fees.html">Next</a>
+                </div>
+
+    <footer>
+
+        <p><i class="fas fa-envelope icon"></i>Email: <a href="mailto:empoweringthenation@change.za">empoweringthenation@change.za</a></p>
+        <p><i class="fas fa-phone icon"></i>Phone: 011 432 7590</p>
+        <p><i class="fas fa-map-marker-alt icon"></i>Location 1: 52 Lily Avenue, Florida, Johannesburg, 1709</p>
+        <p><i class="fas fa-map-marker-alt icon"></i>Location 2: 102 Elm Road, Kensington, Johannesburg, 2094 </p> 
+        <p><i class="fas fa-map-marker-alt icon"></i>Location 3: 56 Birch Street, Ferndale, Johannesburg, 2194</p>
+        <p>Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+        <p>&copy; 2024 Empowering the Nation</p>
+    </footer>
+</body>
+</html>

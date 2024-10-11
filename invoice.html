@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - Empowering the Nation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #558D57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        footer {
+            background-color: #558D57;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #558D57;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-button:hover {
+            background-color: #3d6d44;
+        }
+
+        .invoice-details {
+            background-color: #fff;
+            border: 2px solid #558D57;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .navigation-buttons a {
+            background-color: #558D57;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .navigation-buttons a:hover {
+            background-color: #3d6d44;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Invoice</h1>
+    </header>
+
+    <main>
+        <div class="invoice-details">
+            <h2>Invoice Details</h2>
+            <p><strong>Name:</strong> <span id="customerName"></span></p>
+            <p><strong>Email:</strong> <span id="customerEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="customerPhone"></span></p>
+            <p><strong>Address:</strong> <span id="customerAddress"></span></p>
+            <p><strong>Original Price:</strong> <span id="originalPrice"></span></p>
+            <p><strong>Discount:</strong> <span id="discount"></span></p>
+            <p><strong>Final Price:</strong> <span id="finalPrice"></span></p>
+        </div>
+
+        <a class="back-button" href="fees.html">Back to Fees Calculation</a>
+    </main>
+
+    <footer>
+        <p><i class="fas fa-envelope icon"></i>Email: <a href="mailto:empoweringthenation@change.za">empoweringthenation@change.za</a></p>
+        <p><i class="fas fa-phone icon"></i>Phone: 011 432 7590</p>
+        <p>&copy; 2024 Empowering the Nation</p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('customerName').textContent = urlParams.get('name');
+        document.getElementById('customerEmail').textContent = urlParams.get('email');
+        document.getElementById('customerPhone').textContent = urlParams.get('phone');
+        document.getElementById('customerAddress').textContent = urlParams.get('address');
+        document.getElementById('originalPrice').textContent = urlParams.get('originalPrice');
+        document.getElementById('discount').textContent = urlParams.get('discount');
+        document.getElementById('finalPrice').textContent = urlParams.get('finalPrice');
+    </script>
+</body>
+
+</html>

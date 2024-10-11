@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Course - Empowering the Nation</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
+            z-index: 0;
+        }
+
+        .overlay-text {
+            position: relative;
+            z-index: 1;
+            color: white;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .overlay-text h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .overlay-text p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            background-color: #333;
+            z-index: 1;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #C9A66B;
+            color: white;
+            padding: 5px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2, h3, h4 {
+            color: #558D57;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        section {
+            border: 2px solid #558D57;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        section.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        ol, ul {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        ol li, ul li {
+            font-weight: bold;
+        }
+
+        .register-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #558D57, #4A7D4E);
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .register-button:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #558D57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-info {
+            background-color: #e6f2e6;
+            padding: 10px;
+            margin-top: 20px;
+            border-left: 5px solid #558D57;
+        }
+
+        .slogan {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <video autoplay muted loop>
+            <source src="videos/first-aid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay-text">
+            <h1>First-Aid</h1>
+            <p>Your gateway to essential First Aid skills.</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="course-details">
+            <h2>First Aid Course</h2>
+            <p>Welcome to the First Aid Course! This course is designed to equip you with the essential skills and knowledge to respond effectively to medical emergencies.</p>
+
+            <h3><i class="fas fa-clipboard-list"></i> Course Content</h3>
+            <ul>
+                <li>Understanding First Aid principles</li>
+                <li>CPR (Cardiopulmonary Resuscitation)</li>
+                <li>Wound care and bandaging techniques</li>
+                <li>Managing burns and shock</li>
+                <li>Responding to choking and breathing difficulties</li>
+                <li>Handling fractures and sprains</li>
+                <li>Emergency response protocols</li>
+            </ul>
+
+            <h3><i class="fas fa-tasks"></i> Course Objectives</h3>
+            <ul>
+                <li>Recognize emergencies and understand the importance of First Aid.</li>
+                <li>Perform CPR and understand the use of AEDs.</li>
+                <li>Apply appropriate techniques for managing wounds and injuries.</li>
+                <li>Communicate effectively with emergency services.</li>
+                <li>Demonstrate confidence in handling emergency situations.</li>
+            </ul>
+
+            <h3><i class="far fa-clock"></i> Course Duration and Schedule</h3>
+            <p>The First Aid Course is a 6-week full-time course.</p>
+
+            <h3><i class="fas fa-pen"></i> Registration</h3>
+            <p>To register for the First Aid Course, please click the button below:</p>
+            <a href="registration.html" class="register-button">Register Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:empoweringthenation@change.za">empoweringthenation@change.za</a></p>
+        <p>Phone: 011 432 7590</p>
+        <p>&copy; 2024 Empowering the Nation</p>
+    </footer>
+
+    <script>
+        document.addEventListener("scroll", function () {
+            var sections = document.querySelectorAll("section");
+            sections.forEach(function (section) {
+                var position = section.getBoundingClientRect();
+                if (position.top < window.innerHeight) {
+                    section.classList.add("in-view");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

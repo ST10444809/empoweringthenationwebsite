@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation - CoursePage</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #558D57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border: none;
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        #logo img {
+            max-width: 150px;
+        }
+
+        .business-name {
+            margin-left: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #558D57;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #558D57;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+
+        main {
+            padding: 20px;
+        }
+
+        h2, h3, h4 {
+            color: #558D57;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2, h3, h4, h5 {
+            color: #558D57;
+        }
+
+        section {
+            border: 2px solid #558D57;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .section-title {
+            margin-top: 40px;
+        }
+
+        ol {
+            margin-left: 20px;
+        }
+
+        .courses-list ol {
+            list-style-type: decimal;
+            margin-bottom: 20px;
+        }
+
+        .courses-list h4 {
+            margin-top: 10px;
+        }
+
+        ol li {
+            font-weight: bold;
+        }
+        footer {
+            background-color: #558D57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-info {
+            background-color: #e6f2e6;
+            padding: 10px;
+            margin-top: 20px;
+            border-left: 5px solid #558D57;
+        }
+
+        .slogan {
+            font-style: italic;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .navigation-buttons a {
+            background-color: #558D57;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .navigation-buttons a:hover {
+            background-color: #3d6d44;
+        }
+
+        /* Margin for inline elements */
+        nav ul li {
+            margin-left: 15px;
+        }
+
+        /* Set inline margin and spacing for list items */
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="Image-removebg-preview.png" alt="Empowering the Nation Logo">
+            <span class="business-name">Empowering the Nation</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="6-month course.html">6-month Course</a></li>
+                <li class="dropdown">
+                    <a href="#" class="6-week course.html">6-Weeks course</a>
+                    <div class="dropdown-content">
+                        <a href="child-minding.html">Child-Minding</a>
+                        <a href="cooking.html">Cooking</a>
+                        <a href="garden-maintenance.html">Garden-Maintenance</a>
+                    </div>
+                </li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="courses" class="section-title courses-list">
+            <h2>Courses</h2>
+            <h3>6-week Courses</h3>
+
+            <ol>
+                <li>Child Minding
+                    <p>Designed to provide individuals with the skills and knowledge to care for children in a safe and nurturing environment.</p>
+                    <h4>Training Program Includes:</h4>
+                    <ol type="i">
+                        <li>Child Development</li>
+                        <li>Health and Safety</li>
+                        <li>Nutrition</li>
+                        <li>Behavior Management</li>
+                        <li>Educational Activities</li>
+                        <li>Communication</li>
+                    </ol>
+                </li>
+
+                <li>Cooking
+                    <p>This course teaches the fundamentals of food preparation, cooking techniques, and kitchen management.</p>
+                    <h4>Training Program Includes:</h4>
+                    <ol type="i">
+                        <li>Basic Cooking Techniques</li>
+                        <li>Knife Skills</li>
+                        <li>Kitchen Management</li>
+                        <li>Nutrition and Food Safety</li>
+                        <li>Menu Planning</li>
+                        <li>Baking and Pastry</li>
+                        <li>Presentation and Plating</li>
+                    </ol>
+                </li>
+
+                <li>Garden Maintenance
+                    <p>This course provides skills to care for and maintain gardens effectively.</p>
+                    <h4>Training Program Includes:</h4>
+                    <ol type="i">
+                        <li>Tools and Equipment Use</li>
+                        <li>Lawn Care</li>
+                        <li>Seasonal Maintenance</li>
+                        <li>Irrigation and Water Systems</li>
+                        <li>Planting Techniques</li>
+                        <li>Soil Preparation and Fertilization</li>
+                        <li>Pruning and Trimming</li>
+                        <li>Weed and Pest Control</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <div class="navigation-buttons">
+        <a href="about.html">Back</a>
+        <a href="fees.html">Next</a>
+    </div>
+
+    <footer>
+        <p><i class="fas fa-envelope icon"></i>Email: <a href="mailto:empoweringthenation@change.za">empoweringthenation@change.za</a></p>
+        <p><i class="fas fa-phone icon"></i>Phone: 011 432 7590</p>
+        <p><i class="fas fa-map-marker-alt icon"></i>Location 1: 52 Lily Avenue, Florida, Johannesburg, 1709</p>
+        <p><i class="fas fa-map-marker-alt icon"></i>Location 2: 102 Elm Road, Kensington, Johannesburg, 2094 </p>
+        <p><i class="fas fa-map-marker-alt icon"></i>Location 3: 56 Birch Street, Ferndale, Johannesburg, 2194</p>
+        <p>Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+        <p>&copy; 2024 Empowering the Nation</p>
+    </footer>
+</body>
+
+</html>

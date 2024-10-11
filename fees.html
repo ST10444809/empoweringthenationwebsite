@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation - HomePage</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #558D57;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border: none;
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        #logo img {
+            max-width: 150px;
+        }
+
+        .business-name {
+            margin-left: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h2,
+        h3,
+        h4 {
+            color: #558D57;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        section {
+            border: 2px solid #558D57;
+            padding: 20px;
+            margin-bottom: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #558D57;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            background-color: #e6f2e6;
+            padding: 10px;
+            margin-top: 20px;
+            border-left: 5px solid #558D57;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .navigation-buttons a {
+            background-color: #558D57;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .navigation-buttons a:hover {
+            background-color: #3d6d44;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #558D57;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3d6d44;
+        }
+
+        #feesResult {
+            margin-top: 20px;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid #558D57;
+            background-color: #e7f9e7;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+            margin-top: -10px;
+        }
+
+        #invoice {
+            display: none;
+            border: 1px solid #333;
+            padding: 15px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="Image-removebg-preview.png" alt="Empowering the Nation Logo">
+            <span class="business-name">Empowering the Nation</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fees">
+            <h2>Calculate Course Fees</h2>
+            <form id="feesForm">
+                <label>Name: <input type="text" name="name" id="name" required></label>
+                <p class="error" id="nameError"></p>
+
+                <label>Email: <input type="email" name="email" id="email" required></label>
+                <p class="error" id="emailError"></p>
+
+                <label>Phone: <input type="tel" name="phone" id="phone" required></label>
+                <p class="error" id="phoneError"></p>
+
+                <label>Address: <input type="text" name="address" id="address" placeholder="Street, Suburb, City, Postal Code"></label>
+                <p class="error" id="addressError"></p>
+
+                <h3>Select Courses:</h3>
+                <label><input type="checkbox" name="course" value="1500"> First Aid - R1500</label>
+                <label><input type="checkbox" name="course" value="1500"> Sewing - R1500</label>
+                <label><input type="checkbox" name="course" value="750"> Child Minding - R750</label>
+                <label><input type="checkbox" name="course" value="750"> Cooking - R750</label>
+                <label><input type="checkbox" name="course" value="750"> Garden Maintenance - R750</label>
+                <label><input type="checkbox" name="course" value="1500"> Landscaping - R1500</label>
+                <label><input type="checkbox" name="course" value="1500"> Life Skills - R1500</label>
+
+                <button type="button" onclick="validateForm()">Calculate Total</button>
+                <button type="reset">Clear</button>
+            </form>
+
+            <p id="feesResult"></p>
+            <button id="seeInvoiceBtn" onclick="showInvoice()" disabled>See Invoice</button>
+
+            <div id="invoice">
+                <h4>Invoice</h4>
+                <p><strong>Name:</strong> <span id="invoiceName"></span></p>
+                <p><strong>Email:</strong> <span id="invoiceEmail"></span></p>
+                <p><strong>Phone:</strong> <span id="invoicePhone"></span></p>
+                <p><strong>Address:</strong> <span id="invoiceAddress"></span></p>
+                <h5>Selected Courses:</h5>
+                <ul id="invoiceCourses"></ul>
+                <p><strong>Total Fees (Excl. VAT):</strong> R<span id="invoiceTotal"></span></p>
+                <p><strong>VAT (15%):</strong> R<span id="invoiceVAT"></span></p>
+                <p><strong>Total Fees (Incl. VAT):</strong> R<span id="invoiceTotalWithVAT"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <div class="navigation-buttons">
+        <a href="courses.html">Back</a>
+        <a href="gallery.html">Next</a>
+    </div>
+
+    <footer>
+        <p><i class="fas fa-envelope icon"></i>Email: <a href="mailto:empoweringthenation@change.za">empoweringthenation@change.za</a></p>
+        <p><i class="fas fa-phone icon"></i>Phone: 011 432 7590</p>
+        <p><i class="fas fa-map-marker-alt icon"></i>Location 1: 52 Lily Avenue, Florida, Johannesburg, 1709</p>
+        <p><i class="fas fa-map-marker-alt icon"></i>Location 2: 102 Elm Road, Kensington, Johannesburg, 2094</p>
+        <p><i class="fas fa-map-marker-alt icon"></i>Location 3: 56 Birch Street, Ferndale, Johannesburg, 2194</p>
+        <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const VAT_RATE = 0.15; // 15% VAT
+    
+        function calculateTotalFees(selectedCourses) {
+            let totalFees = 0;
+    
+            // Calculate total fees based on selected courses
+            selectedCourses.forEach(course => {
+                totalFees += parseFloat(course.value) || 0; // Use parseFloat for decimal support
+            });
+    
+            // Apply discounts based on the number of selected courses
+            let discount = 0;
+            if (selectedCourses.length === 2) {
+                discount = 0.05; // 5% discount for 2 courses
+            } else if (selectedCourses.length === 3) {
+                discount = 0.10; // 10% discount for 3 courses
+            } else if (selectedCourses.length > 3) {
+                discount = 0.15; // 15% discount for more than 3 courses
+            }
+    
+            // Apply the discount to the total fees
+            totalFees *= (1 - discount);
+    
+            return totalFees;
+        }
+    
+        function validateForm() {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const address = document.getElementById('address').value.trim();
+            const selectedCourses = [...document.querySelectorAll('input[name="course"]:checked')];
+    
+            // Clear previous error messages
+            clearErrorMessages();
+    
+            // Validate input fields
+            if (!validateInputs(name, email, phone, address, selectedCourses)) {
+                return; // Exit if validation fails
+            }
+    
+            // Calculate total fees
+            const totalFees = calculateTotalFees(selectedCourses);
+            const vatAmount = totalFees * VAT_RATE;
+            const totalWithVAT = totalFees + vatAmount;
+    
+            // Display results
+            displayResults(name, email, phone, address, totalFees, vatAmount, totalWithVAT, selectedCourses);
+        }
+    
+        function validateInputs(name, email, phone, address, selectedCourses) {
+            const nameError = document.getElementById('nameError');
+            const emailError = document.getElementById('emailError');
+            const phoneError = document.getElementById('phoneError');
+            const addressError = document.getElementById('addressError');
+    
+            // Validation checks
+            if (name === '') {
+                nameError.textContent = 'Please enter your name.';
+                return false;
+            }
+            if (email === '') {
+                emailError.textContent = 'Please enter your email.';
+                return false;
+            }
+            if (phone === '') {
+                phoneError.textContent = 'Please enter your phone number.';
+                return false;
+            }
+            if (address === '') {
+                addressError.textContent = 'Please enter your address.';
+                return false;
+            }
+            if (selectedCourses.length === 0) {
+                alert('Please select at least one course.');
+                return false;
+            }
+    
+            return true; // All checks passed
+        }
+    
+        function clearErrorMessages() {
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('phoneError').textContent = '';
+            document.getElementById('addressError').textContent = '';
+        }
+    
+        function displayResults(name, email, phone, address, totalFees, vatAmount, totalWithVAT, selectedCourses) {
+            // Display total fees and invoice details
+            document.getElementById('feesResult').innerText = `Total Fees (Excl. VAT): R${totalFees.toFixed(2)}`;
+            document.getElementById('seeInvoiceBtn').disabled = false;
+    
+            // Store data for the invoice
+            document.getElementById('invoiceName').innerText = name;
+            document.getElementById('invoiceEmail').innerText = email;
+            document.getElementById('invoicePhone').innerText = phone;
+            document.getElementById('invoiceAddress').innerText = address;
+            document.getElementById('invoiceTotal').innerText = totalFees.toFixed(2);
+            document.getElementById('invoiceVAT').innerText = vatAmount.toFixed(2);
+            document.getElementById('invoiceTotalWithVAT').innerText = totalWithVAT.toFixed(2);
+    
+            // Populate the invoice courses list
+            const invoiceCourses = document.getElementById('invoiceCourses');
+            invoiceCourses.innerHTML = ''; // Clear previous courses
+            selectedCourses.forEach(course => {
+                const listItem = document.createElement('li');
+                listItem.innerText = course.parentNode.innerText.trim();
+                invoiceCourses.appendChild(listItem);
+            });
+        }
+    
+        function showInvoice() {
+            document.getElementById('invoice').style.display = 'block';
+        }
+    </script>
+    
+</body>
+
+</html>
